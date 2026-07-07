@@ -1,0 +1,67 @@
+.ingrid-darling-regular {
+    font-family: "Ingrid Darling", cursive;
+    font-style: normal;
+}
+.btn{
+    color: #BF66AC;
+    background-color: rgb(255, 255, 255);
+}
+
+/* slider */
+
+.slider{
+    overflow-x: hidden;
+}
+.slider-track{
+    display: flex;
+    align-items: center;
+}
+.slide {
+    padding-right: 12px;
+    padding-left: 12px;
+    flex-shrink: 0
+}
+
+/* ! slider ! */
+
+/* sour */
+
+.sour .one{
+    background-color: #7e7bc2;
+}
+.sour .two{
+    background-color: #8c89d0;
+}
+.sour .three{
+    background-color: #7d79dc;
+}
+
+/* ! sour ! */
+
+/* guts */
+
+.guts .one{
+    background-color: #584b83;
+}
+.guts .two{
+    background-color: #4b3d78;
+}
+.guts .three{
+    background-color: #5b45a3;
+}
+
+/* ! guts ! */
+
+/* love */
+
+.love .one{
+    background-color: #f9bcaf;
+}
+.love .two{
+    background-color: #ffd2c8;
+}
+.love .three{
+    background-color: #faae9d;
+}
+
+/* ! love ! */

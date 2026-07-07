@@ -1,0 +1,80 @@
+/* purple_background */
+
+.purple_background {
+    position: relative;
+    display: flex;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-size: 32px;
+    overflow: hidden;
+}
+.purple_background::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(../images/purple_background.png) center/cover no-repeat;
+    transform: scale(1.1);
+    z-index: 0;
+}
+.purple_background::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(177, 38, 195, 0.1);
+    z-index: 2;
+}
+.purple_background .container {
+    position: relative;
+    align-self: center;
+    z-index: 3;
+}
+.purple_background h1{
+    font-size: 128px;
+}
+.purple_background img{
+    z-index: 1;
+    width: 700px;
+    height: 800px;
+    animation: lefts 2s infinite;
+}
+
+@keyframes lefts {
+  0%,100% {transform: translatex(-40px);}
+  50% {transform: translatex(-40px);}
+}
+
+/* ! purple_background ! */
+
+
+/* window */
+
+.window ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.window li {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+.window .subwindow {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+.window li:hover > .subwindow {
+  display: block;
+}
+.subwindow li {
+  position: relative;
+  padding: 5px;
+  margin: 0;
+}
+
+/* ! window ! */
